@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Hi Melody', cursive;
+}
+
+button,
+input {
+    font-family: 'Hi Melody', cursive;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    font-size: 30px;
+    text-align: center;
+}
+
+#weather {
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+}
+
+#weather img {
+    width: 30px;
+    height: 30px;
+    display: inline;
+}
+
+.time {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    background-image: url('../img/sun.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#login-form,
+#greeting {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-form input:last-child {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#todo-form {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#todo-list {
+    width: auto;
+    height: 200px;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    overflow: auto;
+    font-size: 30px;
+}
+
+img#background {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+}
+
+.hidden {
+    display: none;
+}
